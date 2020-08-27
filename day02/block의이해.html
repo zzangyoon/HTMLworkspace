@@ -1,0 +1,30 @@
+<!doctype html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>block, inline 속성</title>
+<style>
+#box1{
+	background:red;
+	width:90px;
+	float:left;		/* 현재의 태그 요소를 띄운다. */
+}
+#box2{
+	background:yellow;
+	width:100px;
+	float:left;		/*같이 띄워야 나란히 공존 가능*/
+}
+</style>
+</head>
+<body>
+	<!--모든 태그는 박스이면서, 이 박스들은 두 가지의 유형으로 분류된다.
+			1. block 형	:	자신과 같은 행에 그 어떠한 태그도 존재할 수 없다. 용납X
+								너비와 높이를 가질 수 있음
+			2. inline 형	:	자신과 같은 행에 다른 태그요소와 공존이 가능
+								너비와 높이를 가질 수 없음
+	-->
+	<div id="box1">box1</div>
+	<div id="box2">box2</div>
+
+</body>
+</html>
