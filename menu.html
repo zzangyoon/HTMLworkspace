@@ -1,0 +1,78 @@
+<!doctype html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+/* 메뉴들을 묶어놓을 박스에 대한 클래스 정의 */
+.menu{
+	width : 190px;
+	background : yellow;
+}
+/* 선택자는 조합하여 사용할 수 있다. 선택자 뒤에 한 칸을 띄면 하위 요소를 가리킨다 */
+.menu a{
+	display : block;							/* 인라인 속성을 블럭으로 전환 : 너비와 높이가 가능.. 즉 크기를 가질 수 있다 */
+	text-decoration : none;				/* 밑줄 없애기 */
+	background-color : #eeeeee;
+	color:#000000;
+	/* a태그를 이루는 박스와 그 안에 있는 글씨(내용물)가 너무 붙었다.. 좀 간격을 두자 */
+	padding : 10px;
+}
+/* 유사클래스를 이용하여 링크태그에 마우스 올려놓으면 배경색 바뀌게 하기 */
+.menu a:hover{
+	background-color : #cccccc;
+}
+/* a태그에 적용된 클래스 */
+.menu a.active{
+	background-color : #4CAF50;
+	color:#FFFFFF;
+}
+</style>
+</head>
+<body>
+	<div class="menu">
+		<a href="#" class="active">1일차</a>
+		<a href="./day01/index.html" target="myframe">index</a>
+		<a href="./day01/memo.txt" target="myframe"">memo</a>
+		<a href="./day01/테이블기초.html" target="myframe"">테이블기초</a>
+		<a href="./day01/dummy.html" target="myframe"">dummy</a>
+		<a href="./day01/게시판.html" target="myframe"">게시판</a>
+		<a href="./day01/로그인폼 만들기.html" target="myframe"">로그인폼 만들기</a>
+		<a href="./day01/셀합치기.html" target="myframe"">셀합치기</a>
+	</div>
+	<div class="menu">
+		<a href="#" class="active">2일차</a>
+		<a href="./day02/회원가입폼.html" target="myframe">회원가입폼</a>
+		<a href="./day02/CSS색상.html" target="myframe">CSS색상</a>
+		<a href="./day02/Border학습.html" target="myframe">Border학습</a>
+		<a href="./day02/block의이해.html" target="myframe">block의이해</a>
+		<a href="./day02/위치속성.html" target="myframe">위치속성</a>
+		<a href="./day02/레이아웃.html" target="myframe">레이아웃</a>
+		<a href="./day02/배경처리.html" target="myframe">배경처리</a>
+		<a href="./day02/과제.html" target="myframe">과제</a>
+		<a href="./day02/과제풀이.html" target="myframe">과제풀이</a>
+		<a href="./day02/과제2.html" target="myframe">과제2</a>
+	</div>
+	<div class="menu">
+		<a href="#" class="active">3일차</a>
+		<a href="./day03/1 좌우프레임.html" target="myframe">좌우프레임</a>
+		<a href="./day03/2 navi.html" target="myframe">navi</a>
+		<a href="./day03/3 아이프레임.html" target="myframe">아이프레임</a>
+		<a href="./day03/레이아웃.html" target="myframe">레이아웃 학습</a>
+		<a href="./day03/인라인블럭.html" target="myframe">inline-block</a>
+		<a href="./day03/박스모델.html" target="myframe">Box 모델</a>
+		<a href="./day03/트랜지션.html" target="myframe">Transition(전이,변화)</a>
+		<a href="./day03/동영상.html" target="myframe">동영상 제어</a>
+		<a href="./day03/에니메이션.html" target="myframe">에니메이션</a>
+		<a href="./day03/변형.html" target="myframe">Transform(변형)</a>
+	</div>
+	<div class="menu">
+		<a href="#" class="active">4일차</a>
+		<a href="#">예제1</a>
+		<a href="#">예제2</a>
+		<a href="#">예제3</a>
+		<a href="#">예제4</a>
+	</div>
+
+</body>
+</html>
